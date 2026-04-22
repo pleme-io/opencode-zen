@@ -1,0 +1,32 @@
+[package]
+name = "opencode-zen"
+version = "0.1.0"
+edition = "2021"
+description = "Auto-generated Rust SDK for OpenCode Zen API (chat completions)"
+license = "MIT"
+authors = ["Pleme Team <team@pleme.io>"]
+repository = "https://github.com/pleme-io/opencode-zen"
+homepage = "https://github.com/pleme-io/opencode-zen"
+keywords = ["opencode", "zen", "ai", "api", "sdk", "openapi"]
+categories = ["api-bindings", "ai"]
+
+# Generated from: OpenAI Chat Completions API (OpenCode Zen compatible)
+# Generator: openapi-generator-cli (rust client, reqwest library)
+
+[dependencies]
+serde = { version = "^1.0", features = ["derive"] }
+serde_json = "^1.0"
+serde_repr = "^0.1"
+url = "^2.5"
+reqwest = { version = "^0.12", default-features = false, features = ["json", "multipart"] }
+
+[features]
+default = ["rustls-tls"]
+native-tls = ["reqwest/native-tls"]
+rustls-tls = ["reqwest/rustls-tls"]
+
+[profile.release]
+opt-level = "z"
+lto = true
+codegen-units = 1
+strip = true
