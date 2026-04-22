@@ -71,9 +71,17 @@ let response = default_api::create_chat_completion(&config, request).await?;
 println!("{}", response.choices[0].message.content);
 ```
 
+## Fixes Applied
+
+Generated code required fixes for Rust 2021 + clippy compatibility:
+- Removed `extern crate` declarations (lib.rs)
+- Added `#[default]` attribute to Role enum
+- Removed unnecessary `return` statements
+- Added non-empty doc comments
+
 ## Stats
 
-- **5** Rust source files
+- **21** Rust source files (after fixing)
 - **~500** lines of generated code
 - **1** API endpoint (chat/completions)
 - **5** typed models
