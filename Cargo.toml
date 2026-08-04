@@ -9,8 +9,9 @@ repository = "https://github.com/pleme-io/opencode-zen"
 homepage = "https://github.com/pleme-io/opencode-zen"
 keywords = ["opencode", "zen", "ai", "api", "sdk", "openapi"]
 # "ai" is not a crates.io slug; the registry's is "artificial-intelligence".
-#  is validated only at upload, so a wrong slug is invisible until
-# a release actually reaches crates.io — it fails the whole publish with a 400.
+# The `categories` field is validated ONLY at upload, so a wrong slug is
+# invisible locally and fails the whole release with a 400 the first time a
+# publish actually reaches the registry.
 categories = ["api-bindings", "artificial-intelligence"]
 
 # Generated from: OpenAI Chat Completions API (OpenCode Zen compatible)
