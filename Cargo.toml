@@ -8,7 +8,10 @@ authors = ["Pleme Team <team@pleme.io>"]
 repository = "https://github.com/pleme-io/opencode-zen"
 homepage = "https://github.com/pleme-io/opencode-zen"
 keywords = ["opencode", "zen", "ai", "api", "sdk", "openapi"]
-categories = ["api-bindings", "ai"]
+# "ai" is not a crates.io slug; the registry's is "artificial-intelligence".
+#  is validated only at upload, so a wrong slug is invisible until
+# a release actually reaches crates.io — it fails the whole publish with a 400.
+categories = ["api-bindings", "artificial-intelligence"]
 
 # Generated from: OpenAI Chat Completions API (OpenCode Zen compatible)
 # Generator: openapi-generator-cli (rust client, reqwest library)
