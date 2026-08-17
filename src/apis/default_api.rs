@@ -38,6 +38,31 @@ pub async fn create_chat_completion(
     if let Some(ref user_agent) = configuration.user_agent {
         req_builder = req_builder.header(reqwest::header::USER_AGENT, user_agent.clone());
     }
+
+    // AUTH. This block was ABSENT until 2026-08-17, which meant the one
+    // endpoint this crate exposes sent every request unauthenticated and the
+    // crate could never have worked against the live service. `Configuration`
+    // has carried `bearer_access_token` the whole time; nothing read it.
+    //
+    // That is not a cosmetic gap — it is why the crate went unused. tend took
+    // this as a dependency and then hand-rolled the same call with reqwest,
+    // re-declaring the request and response types inline, because the typed
+    // path 401s. The fix belongs here rather than in the caller.
+    //
+    // `api_key` is deliberately NOT consulted: the service expects
+    // `Authorization: Bearer <key>`, which is what `bearer_auth` emits. The
+    // README used to show `config.api_key = Some("z-…".to_string())`, which
+    // does not even typecheck (`api_key` is `Option<ApiKey>`, a struct) — it
+    // is corrected there to match this.
+    //
+    // GENERATED FILE: there is no OpenAPI spec in this repo, so this cannot be
+    // regenerated here and a future regeneration WILL drop this block. The
+    // durable fix is a `security` scheme on the spec, which makes
+    // openapi-generator emit exactly these three lines itself.
+    if let Some(ref token) = configuration.bearer_access_token {
+        req_builder = req_builder.bearer_auth(token.to_owned());
+    }
+
     req_builder = req_builder.json(&params.create_chat_completion_request);
 
     let req = req_builder.build()?;
