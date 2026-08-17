@@ -28,6 +28,9 @@ reqwest = { version = "^0.12", default-features = false, features = ["json", "mu
 # is runtime-agnostic and must stay that way.
 [dev-dependencies]
 tokio = { version = "^1", features = ["macros", "rt-multi-thread"] }
+# tests/spec_matches_models.rs reads openapi.yaml and compares it against the
+# generated models. Dev-only: the library must not gain a YAML parser.
+serde_yaml = "^0.9"
 
 [features]
 default = ["rustls-tls"]

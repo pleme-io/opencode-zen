@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
-  "cargo_lock_sha256": "bd1bddb1729d398edca96f103837c67ed93aaa7ee4d38380178285f5c385fbe0",
+  "cargo_lock_sha256": "e1afa028e248193a4fa73b1d6e1263b283719330c866af6e06fd11e7f6076f4b",
   "manifest_sha256": {
-    "Cargo.toml": "70161562c1a7f8c2447552ead2055503744cfc749c18e039c7f74bc33a5166d6"
+    "Cargo.toml": "6db4e04d6d4275c7a83b85e1966733b2ea6f17314b21635ddc947e1a6832277e"
   },
   "target_resolves": {
     "base": {
@@ -102,6 +102,11 @@
             "tree": "target"
           }
         ],
+        "build_dependencies": [],
+        "features": []
+      },
+      "equivalent-1.0.2": {
+        "runtime_dependencies": [],
         "build_dependencies": [],
         "features": []
       },
@@ -345,6 +350,11 @@
           "std",
           "wasm_js"
         ]
+      },
+      "hashbrown-0.17.1": {
+        "runtime_dependencies": [],
+        "build_dependencies": [],
+        "features": []
       },
       "http-1.4.1": {
         "runtime_dependencies": [
@@ -1293,6 +1303,35 @@
         "build_dependencies": [],
         "features": [
           "compiled_data"
+        ]
+      },
+      "indexmap-2.14.0": {
+        "runtime_dependencies": [
+          {
+            "name": "equivalent",
+            "package_key": "equivalent-1.0.2",
+            "kind": "normal",
+            "features": [],
+            "uses_default_features": false,
+            "optional": false,
+            "target": null,
+            "tree": "target"
+          },
+          {
+            "name": "hashbrown",
+            "package_key": "hashbrown-0.17.1",
+            "kind": "normal",
+            "features": [],
+            "uses_default_features": false,
+            "optional": false,
+            "target": null,
+            "tree": "target"
+          }
+        ],
+        "build_dependencies": [],
+        "features": [
+          "default",
+          "std"
         ]
       },
       "ipnet-2.12.0": {
@@ -2655,6 +2694,62 @@
         "build_dependencies": [],
         "features": []
       },
+      "serde_yaml-0.9.34+deprecated": {
+        "runtime_dependencies": [
+          {
+            "name": "indexmap",
+            "package_key": "indexmap-2.14.0",
+            "kind": "normal",
+            "features": [],
+            "uses_default_features": true,
+            "optional": false,
+            "target": null,
+            "tree": "target"
+          },
+          {
+            "name": "itoa",
+            "package_key": "itoa-1.0.18",
+            "kind": "normal",
+            "features": [],
+            "uses_default_features": true,
+            "optional": false,
+            "target": null,
+            "tree": "target"
+          },
+          {
+            "name": "ryu",
+            "package_key": "ryu-1.0.23",
+            "kind": "normal",
+            "features": [],
+            "uses_default_features": true,
+            "optional": false,
+            "target": null,
+            "tree": "target"
+          },
+          {
+            "name": "serde",
+            "package_key": "serde-1.0.228",
+            "kind": "normal",
+            "features": [],
+            "uses_default_features": true,
+            "optional": false,
+            "target": null,
+            "tree": "target"
+          },
+          {
+            "name": "unsafe_libyaml",
+            "package_key": "unsafe-libyaml-0.2.11",
+            "kind": "normal",
+            "features": [],
+            "uses_default_features": true,
+            "optional": false,
+            "target": null,
+            "tree": "target"
+          }
+        ],
+        "build_dependencies": [],
+        "features": []
+      },
       "shlex-2.0.1": {
         "runtime_dependencies": [],
         "build_dependencies": [],
@@ -3422,6 +3517,11 @@
         "features": []
       },
       "unicode-ident-1.0.24": {
+        "runtime_dependencies": [],
+        "build_dependencies": [],
+        "features": []
+      },
+      "unsafe-libyaml-0.2.11": {
         "runtime_dependencies": [],
         "build_dependencies": [],
         "features": []
@@ -4236,6 +4336,9 @@
       "edition": "2021",
       "proc_macro": true
     },
+    "equivalent-1.0.2": {
+      "edition": "2015"
+    },
     "find-msvc-tools-0.1.9": {
       "edition": "2018"
     },
@@ -4260,6 +4363,9 @@
     "getrandom-0.3.4": {
       "edition": "2021",
       "build_script": "build.rs"
+    },
+    "hashbrown-0.17.1": {
+      "edition": "2024"
     },
     "http-1.4.1": {
       "edition": "2021"
@@ -4310,6 +4416,9 @@
       "edition": "2018"
     },
     "idna_adapter-1.2.2": {
+      "edition": "2024"
+    },
+    "indexmap-2.14.0": {
       "edition": "2024"
     },
     "ipnet-2.12.0": {
@@ -4451,6 +4560,9 @@
     "serde_urlencoded-0.7.1": {
       "edition": "2018"
     },
+    "serde_yaml-0.9.34+deprecated": {
+      "edition": "2021"
+    },
     "shlex-2.0.1": {
       "edition": "2018"
     },
@@ -4534,6 +4646,19 @@
     },
     "unicode-ident-1.0.24": {
       "edition": "2021"
+    },
+    "unsafe-libyaml-0.2.11": {
+      "edition": "2021",
+      "binaries": [
+        {
+          "name": "run-emitter-test-suite",
+          "path": "src/bin/run-emitter-test-suite.rs"
+        },
+        {
+          "name": "run-parser-test-suite",
+          "path": "src/bin/run-parser-test-suite.rs"
+        }
+      ]
     },
     "untrusted-0.9.0": {
       "edition": "2018"
