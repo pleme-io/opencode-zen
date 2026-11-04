@@ -7,7 +7,7 @@ license = "MIT"
 authors = ["Pleme Team <team@pleme.io>"]
 repository = "https://github.com/pleme-io/opencode-zen"
 homepage = "https://github.com/pleme-io/opencode-zen"
-keywords = ["opencode", "zen", "ai", "api", "sdk", "openapi"]
+keywords = ["opencode", "ai", "api", "sdk", "openapi"]
 # "ai" is not a crates.io slug; the registry's is "artificial-intelligence".
 # The `categories` field is validated ONLY at upload, so a wrong slug is
 # invisible locally and fails the whole release with a 400 the first time a
