@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
-  "cargo_lock_sha256": "06e1ab1c1e3d2eadeeb4faef8fc2a8ca9233799b85e8154733da1665401fdde9",
+  "cargo_lock_sha256": "40eca3c3da2006da1e9b75353d2a237c35a094cb6df34d421b067ac8cc5caa74",
   "manifest_sha256": {
-    "Cargo.toml": "aafea63f9ed9da27108b05383f7a1db080a01a5f4c538b728f9e513f380420d7"
+    "Cargo.toml": "fad460c75a1070e73010fa00de081353e4f19d888a6df245254397c54d5c8570"
   },
   "target_resolves": {
     "base": {
@@ -43,7 +43,7 @@
           "std"
         ]
       },
-      "cc-1.9.0": {
+      "cc-1.11.0": {
         "runtime_dependencies": [
           {
             "name": "find_msvc_tools",
@@ -582,7 +582,7 @@
           },
           {
             "name": "smallvec",
-            "package_key": "smallvec-1.16.3",
+            "package_key": "smallvec-1.16.4",
             "kind": "normal",
             "features": [
               "const_generics",
@@ -700,7 +700,7 @@
           },
           {
             "name": "webpki_roots",
-            "package_key": "webpki-roots-1.0.10",
+            "package_key": "webpki-roots-1.0.11",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -895,7 +895,7 @@
           "tokio"
         ]
       },
-      "icu_collections-2.3.0": {
+      "icu_collections-2.4.0": {
         "runtime_dependencies": [
           {
             "name": "displaydoc",
@@ -921,7 +921,7 @@
           },
           {
             "name": "utf8_iter",
-            "package_key": "utf8_iter-1.0.4",
+            "package_key": "utf8_iter-1.1.0",
             "kind": "normal",
             "features": [],
             "uses_default_features": false,
@@ -931,7 +931,7 @@
           },
           {
             "name": "yoke",
-            "package_key": "yoke-0.8.3",
+            "package_key": "yoke-0.8.4",
             "kind": "normal",
             "features": [
               "derive"
@@ -955,7 +955,7 @@
           },
           {
             "name": "zerovec",
-            "package_key": "zerovec-0.11.8",
+            "package_key": "zerovec-0.11.9",
             "kind": "normal",
             "features": [
               "derive",
@@ -970,7 +970,7 @@
         "build_dependencies": [],
         "features": []
       },
-      "icu_locale_core-2.3.0": {
+      "icu_locale_core-2.4.0": {
         "runtime_dependencies": [
           {
             "name": "displaydoc",
@@ -994,7 +994,7 @@
           },
           {
             "name": "tinystr",
-            "package_key": "tinystr-0.8.4",
+            "package_key": "tinystr-0.8.5",
             "kind": "normal",
             "features": [],
             "uses_default_features": false,
@@ -1014,7 +1014,7 @@
           },
           {
             "name": "zerovec",
-            "package_key": "zerovec-0.11.8",
+            "package_key": "zerovec-0.11.9",
             "kind": "normal",
             "features": [],
             "uses_default_features": false,
@@ -1028,11 +1028,11 @@
           "zerovec"
         ]
       },
-      "icu_normalizer-2.3.0": {
+      "icu_normalizer-2.4.0": {
         "runtime_dependencies": [
           {
             "name": "icu_collections",
-            "package_key": "icu_collections-2.3.0",
+            "package_key": "icu_collections-2.4.0",
             "kind": "normal",
             "features": [],
             "uses_default_features": false,
@@ -1042,7 +1042,7 @@
           },
           {
             "name": "icu_normalizer_data",
-            "package_key": "icu_normalizer_data-2.3.0",
+            "package_key": "icu_normalizer_data-2.4.0",
             "kind": "normal",
             "features": [],
             "uses_default_features": false,
@@ -1052,7 +1052,7 @@
           },
           {
             "name": "icu_provider",
-            "package_key": "icu_provider-2.3.1",
+            "package_key": "icu_provider-2.4.0",
             "kind": "normal",
             "features": [],
             "uses_default_features": false,
@@ -1062,7 +1062,7 @@
           },
           {
             "name": "smallvec",
-            "package_key": "smallvec-1.16.3",
+            "package_key": "smallvec-1.16.4",
             "kind": "normal",
             "features": [],
             "uses_default_features": false,
@@ -1072,7 +1072,7 @@
           },
           {
             "name": "zerovec",
-            "package_key": "zerovec-0.11.8",
+            "package_key": "zerovec-0.11.9",
             "kind": "normal",
             "features": [],
             "uses_default_features": false,
@@ -1086,12 +1086,12 @@
           "compiled_data"
         ]
       },
-      "icu_normalizer_data-2.3.0": {
+      "icu_normalizer_data-2.4.0": {
         "runtime_dependencies": [],
         "build_dependencies": [],
         "features": []
       },
-      "icu_properties-2.3.0": {
+      "icu_properties-2.4.0": {
         "runtime_dependencies": [
           {
             "name": "displaydoc",
@@ -1105,7 +1105,7 @@
           },
           {
             "name": "icu_collections",
-            "package_key": "icu_collections-2.3.0",
+            "package_key": "icu_collections-2.4.0",
             "kind": "normal",
             "features": [],
             "uses_default_features": false,
@@ -1115,7 +1115,7 @@
           },
           {
             "name": "icu_locale_core",
-            "package_key": "icu_locale_core-2.3.0",
+            "package_key": "icu_locale_core-2.4.0",
             "kind": "normal",
             "features": [
               "zerovec"
@@ -1127,7 +1127,7 @@
           },
           {
             "name": "icu_properties_data",
-            "package_key": "icu_properties_data-2.3.0",
+            "package_key": "icu_properties_data-2.4.0",
             "kind": "normal",
             "features": [],
             "uses_default_features": false,
@@ -1137,7 +1137,7 @@
           },
           {
             "name": "icu_provider",
-            "package_key": "icu_provider-2.3.1",
+            "package_key": "icu_provider-2.4.0",
             "kind": "normal",
             "features": [],
             "uses_default_features": false,
@@ -1160,7 +1160,7 @@
           },
           {
             "name": "zerovec",
-            "package_key": "zerovec-0.11.8",
+            "package_key": "zerovec-0.11.9",
             "kind": "normal",
             "features": [
               "derive",
@@ -1177,12 +1177,12 @@
           "compiled_data"
         ]
       },
-      "icu_properties_data-2.3.0": {
+      "icu_properties_data-2.4.0": {
         "runtime_dependencies": [],
         "build_dependencies": [],
         "features": []
       },
-      "icu_provider-2.3.1": {
+      "icu_provider-2.4.0": {
         "runtime_dependencies": [
           {
             "name": "displaydoc",
@@ -1196,7 +1196,7 @@
           },
           {
             "name": "icu_locale_core",
-            "package_key": "icu_locale_core-2.3.0",
+            "package_key": "icu_locale_core-2.4.0",
             "kind": "normal",
             "features": [],
             "uses_default_features": false,
@@ -1216,7 +1216,7 @@
           },
           {
             "name": "yoke",
-            "package_key": "yoke-0.8.3",
+            "package_key": "yoke-0.8.4",
             "kind": "normal",
             "features": [
               "derive"
@@ -1250,7 +1250,7 @@
           },
           {
             "name": "zerovec",
-            "package_key": "zerovec-0.11.8",
+            "package_key": "zerovec-0.11.9",
             "kind": "normal",
             "features": [
               "derive"
@@ -1280,7 +1280,7 @@
           },
           {
             "name": "smallvec",
-            "package_key": "smallvec-1.16.3",
+            "package_key": "smallvec-1.16.4",
             "kind": "normal",
             "features": [
               "const_generics"
@@ -1292,7 +1292,7 @@
           },
           {
             "name": "utf8_iter",
-            "package_key": "utf8_iter-1.0.4",
+            "package_key": "utf8_iter-1.1.0",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -1312,7 +1312,7 @@
         "runtime_dependencies": [
           {
             "name": "icu_normalizer",
-            "package_key": "icu_normalizer-2.3.0",
+            "package_key": "icu_normalizer-2.4.0",
             "kind": "normal",
             "features": [],
             "uses_default_features": false,
@@ -1322,7 +1322,7 @@
           },
           {
             "name": "icu_properties",
-            "package_key": "icu_properties-2.3.0",
+            "package_key": "icu_properties-2.4.0",
             "kind": "normal",
             "features": [],
             "uses_default_features": false,
@@ -1391,7 +1391,7 @@
         "build_dependencies": [],
         "features": []
       },
-      "log-0.4.34": {
+      "log-0.4.35": {
         "runtime_dependencies": [],
         "build_dependencies": [],
         "features": []
@@ -1409,7 +1409,7 @@
           "std"
         ]
       },
-      "mime-0.3.17": {
+      "mime-0.3.18": {
         "runtime_dependencies": [],
         "build_dependencies": [],
         "features": []
@@ -1418,7 +1418,7 @@
         "runtime_dependencies": [
           {
             "name": "mime",
-            "package_key": "mime-0.3.17",
+            "package_key": "mime-0.3.18",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -1481,7 +1481,7 @@
           "std"
         ]
       },
-      "opencode-zen-0.1.3": {
+      "opencode-zen-0.1.4": {
         "runtime_dependencies": [
           {
             "name": "reqwest",
@@ -1563,7 +1563,7 @@
         "runtime_dependencies": [
           {
             "name": "zerovec",
-            "package_key": "zerovec-0.11.8",
+            "package_key": "zerovec-0.11.9",
             "kind": "normal",
             "features": [],
             "uses_default_features": false,
@@ -2116,7 +2116,7 @@
           },
           {
             "name": "log",
-            "package_key": "log-0.4.34",
+            "package_key": "log-0.4.35",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -2304,7 +2304,7 @@
           },
           {
             "name": "webpki_roots",
-            "package_key": "webpki-roots-1.0.10",
+            "package_key": "webpki-roots-1.0.11",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -2769,7 +2769,7 @@
           "std"
         ]
       },
-      "smallvec-1.16.3": {
+      "smallvec-1.16.4": {
         "runtime_dependencies": [],
         "build_dependencies": [],
         "features": [
@@ -2973,7 +2973,7 @@
         "build_dependencies": [],
         "features": []
       },
-      "tinystr-0.8.4": {
+      "tinystr-0.8.5": {
         "runtime_dependencies": [
           {
             "name": "displaydoc",
@@ -2987,7 +2987,7 @@
           },
           {
             "name": "zerovec",
-            "package_key": "zerovec-0.11.8",
+            "package_key": "zerovec-0.11.9",
             "kind": "normal",
             "features": [],
             "uses_default_features": false,
@@ -3519,7 +3519,23 @@
           "std"
         ]
       },
-      "utf8_iter-1.0.4": {
+      "utf8_iter-1.1.0": {
+        "runtime_dependencies": [
+          {
+            "name": "utf_types",
+            "package_key": "utf_types-1.0.0",
+            "kind": "normal",
+            "features": [],
+            "uses_default_features": true,
+            "optional": false,
+            "target": null,
+            "tree": "target"
+          }
+        ],
+        "build_dependencies": [],
+        "features": []
+      },
+      "utf_types-1.0.0": {
         "runtime_dependencies": [],
         "build_dependencies": [],
         "features": []
@@ -3540,7 +3556,7 @@
         "build_dependencies": [],
         "features": []
       },
-      "webpki-roots-1.0.10": {
+      "webpki-roots-1.0.11": {
         "runtime_dependencies": [
           {
             "name": "pki_types",
@@ -3561,7 +3577,7 @@
         "build_dependencies": [],
         "features": []
       },
-      "yoke-0.8.3": {
+      "yoke-0.8.4": {
         "runtime_dependencies": [
           {
             "name": "stable_deref_trait",
@@ -3738,7 +3754,7 @@
           },
           {
             "name": "yoke",
-            "package_key": "yoke-0.8.3",
+            "package_key": "yoke-0.8.4",
             "kind": "normal",
             "features": [
               "derive"
@@ -3765,11 +3781,11 @@
           "zerofrom"
         ]
       },
-      "zerovec-0.11.8": {
+      "zerovec-0.11.9": {
         "runtime_dependencies": [
           {
             "name": "yoke",
-            "package_key": "yoke-0.8.3",
+            "package_key": "yoke-0.8.4",
             "kind": "normal",
             "features": [],
             "uses_default_features": false,
@@ -3789,7 +3805,7 @@
           },
           {
             "name": "zerovec_derive",
-            "package_key": "zerovec-derive-0.11.6",
+            "package_key": "zerovec-derive-0.11.7",
             "kind": "normal",
             "features": [],
             "uses_default_features": false,
@@ -3804,7 +3820,7 @@
           "yoke"
         ]
       },
-      "zerovec-derive-0.11.6": {
+      "zerovec-derive-0.11.7": {
         "runtime_dependencies": [
           {
             "name": "proc_macro2",
@@ -3935,7 +3951,7 @@
             "build_dependencies": [
               {
                 "name": "cc",
-                "package_key": "cc-1.9.0",
+                "package_key": "cc-1.11.0",
                 "kind": "build",
                 "features": [],
                 "uses_default_features": false,
@@ -4039,7 +4055,7 @@
             "build_dependencies": [
               {
                 "name": "cc",
-                "package_key": "cc-1.9.0",
+                "package_key": "cc-1.11.0",
                 "kind": "build",
                 "features": [],
                 "uses_default_features": false,
@@ -4143,7 +4159,7 @@
             "build_dependencies": [
               {
                 "name": "cc",
-                "package_key": "cc-1.9.0",
+                "package_key": "cc-1.11.0",
                 "kind": "build",
                 "features": [],
                 "uses_default_features": false,
@@ -4242,7 +4258,7 @@
             "build_dependencies": [
               {
                 "name": "cc",
-                "package_key": "cc-1.9.0",
+                "package_key": "cc-1.11.0",
                 "kind": "build",
                 "features": [],
                 "uses_default_features": false,
@@ -4341,7 +4357,7 @@
             "build_dependencies": [
               {
                 "name": "cc",
-                "package_key": "cc-1.9.0",
+                "package_key": "cc-1.11.0",
                 "kind": "build",
                 "features": [],
                 "uses_default_features": false,
@@ -4440,7 +4456,7 @@
             "build_dependencies": [
               {
                 "name": "cc",
-                "package_key": "cc-1.9.0",
+                "package_key": "cc-1.11.0",
                 "kind": "build",
                 "features": [],
                 "uses_default_features": false,
@@ -4476,7 +4492,7 @@
     "bytes-1.12.1": {
       "edition": "2021"
     },
-    "cc-1.9.0": {
+    "cc-1.11.0": {
       "edition": "2021"
     },
     "cfg-if-1.0.5": {
@@ -4548,27 +4564,27 @@
     "hyper-util-0.1.21": {
       "edition": "2024"
     },
-    "icu_collections-2.3.0": {
+    "icu_collections-2.4.0": {
       "edition": "2024"
     },
-    "icu_locale_core-2.3.0": {
+    "icu_locale_core-2.4.0": {
       "edition": "2024"
     },
-    "icu_normalizer-2.3.0": {
+    "icu_normalizer-2.4.0": {
       "edition": "2024"
     },
-    "icu_normalizer_data-2.3.0": {
+    "icu_normalizer_data-2.4.0": {
       "edition": "2024",
       "build_script": "build.rs"
     },
-    "icu_properties-2.3.0": {
+    "icu_properties-2.4.0": {
       "edition": "2024"
     },
-    "icu_properties_data-2.3.0": {
+    "icu_properties_data-2.4.0": {
       "edition": "2024",
       "build_script": "build.rs"
     },
-    "icu_provider-2.3.1": {
+    "icu_provider-2.4.0": {
       "edition": "2024"
     },
     "idna-1.1.0": {
@@ -4593,7 +4609,7 @@
     "litemap-0.8.3": {
       "edition": "2021"
     },
-    "log-0.4.34": {
+    "log-0.4.35": {
       "edition": "2021"
     },
     "lru-slab-0.1.3": {
@@ -4602,7 +4618,7 @@
     "memchr-2.8.3": {
       "edition": "2021"
     },
-    "mime-0.3.17": {
+    "mime-0.3.18": {
       "edition": "2015"
     },
     "mime_guess-2.0.5": {
@@ -4621,7 +4637,7 @@
     "once_cell-1.21.4": {
       "edition": "2021"
     },
-    "opencode-zen-0.1.3": {
+    "opencode-zen-0.1.4": {
       "edition": "2021",
       "lib_target": {
         "name": "opencode_zen",
@@ -4725,7 +4741,7 @@
     "slab-0.4.12": {
       "edition": "2018"
     },
-    "smallvec-1.16.3": {
+    "smallvec-1.16.4": {
       "edition": "2018"
     },
     "socket2-0.6.5": {
@@ -4754,7 +4770,7 @@
       "edition": "2021",
       "proc_macro": true
     },
-    "tinystr-0.8.4": {
+    "tinystr-0.8.5": {
       "edition": "2021"
     },
     "tinyvec-1.13.3": {
@@ -4816,19 +4832,22 @@
     "url-2.5.8": {
       "edition": "2018"
     },
-    "utf8_iter-1.0.4": {
+    "utf8_iter-1.1.0": {
+      "edition": "2021"
+    },
+    "utf_types-1.0.0": {
       "edition": "2021"
     },
     "want-0.3.2": {
       "edition": "2018"
     },
-    "webpki-roots-1.0.10": {
+    "webpki-roots-1.0.11": {
       "edition": "2021"
     },
     "writeable-0.6.4": {
       "edition": "2021"
     },
-    "yoke-0.8.3": {
+    "yoke-0.8.4": {
       "edition": "2021"
     },
     "yoke-derive-0.8.4": {
@@ -4848,10 +4867,10 @@
     "zerotrie-0.2.5": {
       "edition": "2021"
     },
-    "zerovec-0.11.8": {
+    "zerovec-0.11.9": {
       "edition": "2021"
     },
-    "zerovec-derive-0.11.6": {
+    "zerovec-derive-0.11.7": {
       "edition": "2021",
       "proc_macro": true
     },
